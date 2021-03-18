@@ -6,3 +6,4 @@ picks winners using simple seed-weighted probability.
 * allow command line args (teams, divisions, etc)
 * include team names
 * support other probability techniques
+* prettify output
