@@ -11,15 +11,15 @@ class BracketNode:
         self.left = left
         self.right = right
 
-    def fill(self, picker):
+    def play(self, picker):
         if not self.left and not self.right:
             return self.team
 
         leftWinner = rightWinner = None
         if self.left:
-            leftWinner = self.left.fill(picker)
+            leftWinner = self.left.play(picker)
         if self.right:
-            rightWinner = self.right.fill(picker)
+            rightWinner = self.right.play(picker)
         self.team = picker.pickWinner(leftWinner, rightWinner)
         return self.team
 
@@ -27,16 +27,15 @@ class BracketNode:
         string = ""
         queue = deque([self])
         while queue:
-            string += "\n" + ("--" * 40)
             roundResult = "\n"
             for i in range(len(queue)):
                 node = queue.popleft()
-                roundResult += f"{node.team.seed}:{node.team.name[:4]}  |  "
+                roundResult += str(node.team) + "  |  "
                 if node.left:
                     queue.append(node.left)
                 if node.right:
                     queue.append(node.right)
-            string += roundResult
+            string += roundResult + "\n" + ("--" * 40)
         return string
 
 
@@ -74,12 +73,12 @@ class Bracket:
             node.right = BracketNode(team=leaves.popleft())
         return root
 
-    def simulate(self, verbose=True):
+    def simulate(self, quiet=False):
         finalTeams = []
         for division in self.orderedDivisions:
             root = self.build(division)
-            finalTeams.append(root.fill(self.picker))
-            if verbose:
+            finalTeams.append(root.play(self.picker))
+            if not quiet:
                 print(f"\n* {division.name} *")
                 print(root)
 
@@ -90,8 +89,8 @@ class Bracket:
         if len(finalTeams) > 1:
             finals = Division(finalTeams, "Finals")
             root = self.build(finals)
-            winner = root.fill(self.picker)
-            if verbose:
+            winner = root.play(self.picker)
+            if not quiet:
                 print(f"\n* {finals.name} *")
                 print(root)
 
