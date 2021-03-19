@@ -1,0 +1,282 @@
+[
+    {
+        "name": "West", 
+        "orderedTeams":
+        [
+            {
+                "name": "Gonzaga", 
+                "seed": 1
+            },
+            {
+                "name": "Norfolk St.", 
+                "seed": 16
+            },
+            {
+                "name": "Oklahoma", 
+                "seed": 8
+            },
+            {
+                "name": "Missouri", 
+                "seed": 9
+            },
+            {
+                "name": "Creighton", 
+                "seed": 5
+            },
+            {
+                "name": "UCSB", 
+                "seed": 12
+            },
+            {
+                "name": "Virginia", 
+                "seed": 4
+            },
+            {
+                "name": "Ohio", 
+                "seed": 13
+            },
+            {
+                "name": "USC", 
+                "seed": 6
+            },
+            {
+                "name": "Drake", 
+                "seed": 11
+            },
+            {
+                "name": "Kansas", 
+                "seed": 3
+            },
+            {
+                "name": "Eastern Wash.", 
+                "seed": 14
+            },
+            {
+                "name": "Oregon", 
+                "seed": 7
+            },
+            {
+                "name": "VCU", 
+                "seed": 10
+            },
+            {
+                "name": "Iowa", 
+                "seed": 2
+            },
+            {
+                "name": "Grand Canyon", 
+                "seed": 15
+            }
+        ]
+    }, 
+    {
+        "name": "East", 
+        "orderedTeams":
+        [
+            {
+                "name": "Michigan", 
+                "seed": 1
+            },
+            {
+                "name": "Texas Southern", 
+                "seed": 16
+            },
+            {
+                "name": "LSU", 
+                "seed": 8
+            },
+            {
+                "name": "St. Bonaventure", 
+                "seed": 9
+            },
+            {
+                "name": "Colorado", 
+                "seed": 5
+            },
+            {
+                "name": "Georgetown", 
+                "seed": 12
+            },
+            {
+                "name": "Florida St.", 
+                "seed": 4
+            },
+            {
+                "name": "UNC Greensboro", 
+                "seed": 13
+            },
+            {
+                "name": "BYU", 
+                "seed": 6
+            },
+            {
+                "name": "UCLA", 
+                "seed": 11
+            },
+            {
+                "name": "Texas", 
+                "seed": 3
+            },
+            {
+                "name": "Abilene Christian", 
+                "seed": 14
+            },
+            {
+                "name": "UConn", 
+                "seed": 7
+            },
+            {
+                "name": "Maryland", 
+                "seed": 10
+            },
+            {
+                "name": "Alabama", 
+                "seed": 2
+            },
+            {
+                "name": "Iona", 
+                "seed": 15
+            }
+        ]
+    },
+    {
+        "name": "South", 
+        "orderedTeams":
+        [
+            {
+                "name": "Baylor", 
+                "seed": 1
+            },
+            {
+                "name": "Hartford", 
+                "seed": 16
+            },
+            {
+                "name": "North Carolina", 
+                "seed": 8
+            },
+            {
+                "name": "Wisconsin", 
+                "seed": 9
+            },
+            {
+                "name": "Villanova", 
+                "seed": 5
+            },
+            {
+                "name": "Winthrop", 
+                "seed": 12
+            },
+            {
+                "name": "Purdue", 
+                "seed": 4
+            },
+            {
+                "name": "North Texas", 
+                "seed": 13
+            },
+            {
+                "name": "Texas Tech", 
+                "seed": 6
+            },
+            {
+                "name": "Utah St.", 
+                "seed": 11
+            },
+            {
+                "name": "Arkansas", 
+                "seed": 3
+            },
+            {
+                "name": "Colgate", 
+                "seed": 14
+            },
+            {
+                "name": "Florida", 
+                "seed": 7
+            },
+            {
+                "name": "Virginia Tech", 
+                "seed": 10
+            },
+            {
+                "name": "Ohio St.", 
+                "seed": 2
+            },
+            {
+                "name": "Oral Roberts", 
+                "seed": 15
+            }
+        ]
+    },
+    {
+        "name": "Midwest", 
+        "orderedTeams":
+        [
+            {
+                "name": "Illinois", 
+                "seed": 1
+            },
+            {
+                "name": "Drexel", 
+                "seed": 16
+            },
+            {
+                "name": "Loyola Chicago", 
+                "seed": 8
+            },
+            {
+                "name": "Georgia Tech", 
+                "seed": 9
+            },
+            {
+                "name": "Tennessee", 
+                "seed": 5
+            },
+            {
+                "name": "Oregon St.", 
+                "seed": 12
+            },
+            {
+                "name": "Oklahoma St.", 
+                "seed": 4
+            },
+            {
+                "name": "Liberty", 
+                "seed": 13
+            },
+            {
+                "name": "San Diego St.", 
+                "seed": 6
+            },
+            {
+                "name": "Syracuse", 
+                "seed": 11
+            },
+            {
+                "name": "West Virginia", 
+                "seed": 3
+            },
+            {
+                "name": "Morehead St.", 
+                "seed": 14
+            },
+            {
+                "name": "Clemson", 
+                "seed": 7
+            },
+            {
+                "name": "Rutgers", 
+                "seed": 10
+            },
+            {
+                "name": "Houston", 
+                "seed": 2
+            },
+            {
+                "name": "Cleveland St.", 
+                "seed": 15
+            }
+        ]
+    } 
+]
