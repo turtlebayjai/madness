@@ -2,8 +2,9 @@
 tournament simulator / bracket generator.
 picks winners using simple seed-weighted probability.
 
+usage: `./madness.py [-h] JSON` *ex:* `./madness.py ../data/2021/womens.json`
+
 ### todo
-* allow command line args (teams, divisions, etc)
-* include team names
-* support other probability techniques
+* generate initial ordering from seed numbers
+* support more winner-selecting strategies
 * prettify output
