@@ -6,10 +6,10 @@ class Picker:
         "simpleSeed",
     }
 
-    def __init__(self, method="simple"):
+    def __init__(self, method="simpleSeed"):
         if method not in Picker.valid:
             print(f"{method} method is invalid: defaulting to simpleSeed")
-            method = "simple"
+            method = "simpleSeed"
         self.method = method
         self.func = getattr(self, method)
 
