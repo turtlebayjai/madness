@@ -4,7 +4,7 @@ picks winners using simple seed-weighted probability.
 
 usage: `./madness.py [-h] JSON` *ex:* `./madness.py ../data/2021/womens.json`
 
-### todo
+### to do
 * generate initial ordering from seed numbers
-* support more winner-selecting strategies
+* support more winner picking strategies
 * prettify output
