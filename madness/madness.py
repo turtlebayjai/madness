@@ -4,8 +4,7 @@ import argparse
 import json
 
 from bracket import Bracket
-from division import Division
-from team import Team
+import reader
 
 
 def cli():
@@ -17,29 +16,10 @@ def cli():
     return parser.parse_args()
 
 
-def getOrderedTeams(division_dict):
-    orderedTeams = []
-    for team_dict in division_dict["orderedTeams"]:
-        t = Team(team_dict["seed"], team_dict["name"])
-        orderedTeams.append(t)
-    return orderedTeams
-
-
-def getOrderedDivisions(data_dict):
-    orderedDivisions = []
-    for division_dict in data_dict:
-        orderedTeams = getOrderedTeams(division_dict)
-        d = Division(orderedTeams, division_dict["name"])
-        orderedDivisions.append(d)
-    return orderedDivisions
-
-
 def main():
     args = cli()
-    with open(args.JSON, "r") as f:
-        orderedDivisions = getOrderedDivisions(json.load(f))
-
-    bracket = Bracket(orderedDivisions)
+    divisions = reader.getDataFromJSON(args.JSON)
+    bracket = Bracket(divisions)
     winner = bracket.simulate(args.quiet)
     print(f"Winner: {winner}")
 
