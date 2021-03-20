@@ -4,6 +4,7 @@ import argparse
 import json
 
 from bracket import Bracket
+from picker import Picker
 import reader
 
 
@@ -19,7 +20,7 @@ def cli():
 def main():
     args = cli()
     divisions = reader.getDataFromJSON(args.JSON)
-    bracket = Bracket(divisions)
+    bracket = Bracket(divisions, Picker("simpleSeed"))
     winner = bracket.simulate(args.quiet)
     print(f"Winner: {winner}")
 
